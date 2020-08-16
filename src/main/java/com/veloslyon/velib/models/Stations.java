@@ -2,24 +2,24 @@ package com.veloslyon.velib.models;
 
 public class Stations {
 
-    private int number;
+    private long number;
     private String contractName;
     private String name;
     private String address;
     private double[] positions = new double[2];
     private boolean bonus;
     private boolean banking;
-    private int bikeStand;
-    private int availableBikeStand;
-    private int availableBike;
+    private long bikeStand;
+    private long availableBikeStand;
+    private long availableBike;
     private String status;
     private long timestampMoment;
 
     public Stations(){}
 
-    public Stations(int number, String contractName, String name, String address
-            , double[] positions, boolean bonus, boolean banking, int bikeStand
-            , int availableBikeStand, int availableBike, String status, long timestampMoment) {
+    public Stations(long number, String contractName, String name, String address
+            , double[] positions, boolean banking, boolean bonus,  long bikeStand
+            , long availableBikeStand, long availableBike, String status, long timestampMoment) {
         this.number = number;
         this.contractName = contractName;
         this.name = name;
@@ -34,11 +34,11 @@ public class Stations {
         this.timestampMoment = timestampMoment;
     }
 
-    public int getNumber() {
+    public long getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(long number) {
         this.number = number;
     }
 
@@ -90,7 +90,7 @@ public class Stations {
         this.banking = banking;
     }
 
-    public int getBikeStand() {
+    public long getBikeStand() {
         return bikeStand;
     }
 
@@ -98,7 +98,7 @@ public class Stations {
         this.bikeStand = bikeStand;
     }
 
-    public int getAvailableBikeStand() {
+    public long getAvailableBikeStand() {
         return availableBikeStand;
     }
 
@@ -106,7 +106,7 @@ public class Stations {
         this.availableBikeStand = availableBikeStand;
     }
 
-    public int getAvailableBike() {
+    public long getAvailableBike() {
         return availableBike;
     }
 
