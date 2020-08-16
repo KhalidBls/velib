@@ -20,9 +20,9 @@ public class VelibApplication {
 		Iterator i = objet.iterator();
 
 		while (i.hasNext()) {
-			JSONObject slide = (JSONObject) i.next();
-			String title = (String)slide.get("contract_name");
-			System.out.println(title);
+			JSONObject jobj = (JSONObject) i.next();
+			String contract = (String)jobj.get("contract_name");
+			System.out.println(contract);
 		}
 
 		SpringApplication.run(VelibApplication.class, args);
