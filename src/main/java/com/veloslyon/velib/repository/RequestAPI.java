@@ -72,6 +72,14 @@ public class RequestAPI {
 		return arr;
 	}
 
+	public Stations getStationByNumber(long number){
+		for(int i=0;i<stationsRepo.size();i++){
+			if(stationsRepo.get(i).getNumber() == number)
+				return stationsRepo.get(i);
+		}
+		return null;
+	}
+
 
 
 }

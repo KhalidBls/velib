@@ -94,7 +94,7 @@ public class Stations {
         return bikeStand;
     }
 
-    public void setBikeStand(int bikeStand) {
+    public void setBikeStand(long bikeStand) {
         this.bikeStand = bikeStand;
     }
 
@@ -102,7 +102,7 @@ public class Stations {
         return availableBikeStand;
     }
 
-    public void setAvailableBikeStand(int availableBikeStand) {
+    public void setAvailableBikeStand(long availableBikeStand) {
         this.availableBikeStand = availableBikeStand;
     }
 
@@ -110,7 +110,7 @@ public class Stations {
         return availableBike;
     }
 
-    public void setAvailableBike(int availableBike) {
+    public void setAvailableBike(long availableBike) {
         this.availableBike = availableBike;
     }
 

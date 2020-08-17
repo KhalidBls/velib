@@ -12,11 +12,6 @@ import java.util.Iterator;
 public class VelibApplication {
 
 	public static void main(String[] args) throws Exception {
-
-		RequestAPI api = new RequestAPI();
-
-		System.out.println(api.getStationsRepo().get(0).getPositions()[0]);
-
 		SpringApplication.run(VelibApplication.class, args);
 	}
 
