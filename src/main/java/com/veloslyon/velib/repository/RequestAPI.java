@@ -39,7 +39,6 @@ public class RequestAPI {
 
 			double[] positions = new double[2];
 			JSONObject json =  (JSONObject)jobj.get("position");
-
 			positions[0] = (double) json.get("lat");
 			positions[1] = (double) json.get("lng");
 
